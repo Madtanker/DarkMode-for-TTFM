@@ -5,7 +5,6 @@
 @description    a simple less eye burning colour change for turntable.fm
 @author         MadTanker
 ==/UserStyle== */
-
 /*private chat*/
 #buddyList {
 	background: #404040 !important;
@@ -63,8 +62,14 @@
 }
 .message-input-view {
 	background-image: linear-gradient(to bottom, #666, #404040, #666) !important;
+	background-color: #404040 !important;
+	box-shadow: none !important;
 }
-
+.conversation-view .error-message {
+	background: #404040 !important;
+	color: white !important;
+	border-top: 1px solid #666 !important;
+}
 
 /*queue tab*/
 .floating-panel-header {
@@ -74,7 +79,7 @@
 	text-shadow: none !important;
 }
 .panel-button {
-	background: #404040 !important;
+	background-image: linear-gradient(to top, #404040, #282828) !important;
 	color: white !important;
 	font-weight: normal !important;
 	box-shadow: 1px 1px 1px black !important;
@@ -93,6 +98,15 @@
 }
 .floating-menu .option.active {
 	background: #f3cc13 !important;
+}
+.floating-menu .option.special:not(.disabled):hover {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.floating-menu .option:not(.split-option):not(.disabled):hover {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.filter .btn {
+	text-shadow: none !important;
 }
 
 #songs {
@@ -229,8 +243,14 @@
 }
 .chat .message.mention {
 	color: #f3cc13 !important;
-	font-weight: bold !important;
+	font-weight: normal !important;
 	background: none !important;
+	box-shadow: inset .1px .1px 5px #f3cc13 !important;
+}
+.chat .message.action {
+	color: /*#1988b5*/
+	#f3cc13 !important;
+	background-image: linear-gradient(to top right, #303030, rgb(243, 204, 19) 1000%) !important;
 }
 .floating-panel-bar {
 	background: linear-gradient(to bottom, #666, #404040) !important;
@@ -238,7 +258,41 @@
 	border-bottom: 1px #666 !important;
 	box-shadow: none !important;
 }
-.message-input {
-	color: #666 !important;
+.message-input,
+#song-search-input {
+	color: white !important;
 	box-shadow: inset 0 0 0 1px #484848 !important;
+	background: #282828 !important;
+	border: none !important;
+}
+.chatsound-container {
+	background-color: #282828 !important;
+	background-image: linear-gradient(to top, #404040, #282828) !important;
+	box-shadow: 1px 1px 1px black !important;
+}
+.chatsound-container:hover {
+	background: none !important;
+}
+.chat-bar .chatsound {
+	border: none !important;
+}
+.horizontal-toggle-option.selected,
+.settings-dropdown .dropdown .split-option.option .option.selected,
+.graphics-modal .toggle .option.selected,
+.floating-menu .split-option.option .option.selected,
+#ding-menu .split-option.option .option.selected {
+	background-image: linear-gradient(to bottom, #00a6e7, #0081b4) !important;
+}
+.floating-panel-header .divider,
+.floating-panel-bar .divider {
+	box-shadow: inset 1px 0 0 0 #666, inset -1px 0 0 0 #282828;
+}
+#ding-menu .option:not(.split-option):not(.disabled):hover {
+	background: #0097d3 !important;
+}
+.speech-bubble {
+	color: white !important;
+	background: #484848 !important;
+	box-shadow: none !important;
+	border: solid 3px #666 !important;
 }
