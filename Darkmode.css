@@ -5,6 +5,13 @@
 @description    a simple less eye burning colour change for turntable.fm
 @author         MadTanker
 ==/UserStyle== */
+/* || TTPlus */
+.message .speaker .ttplus-timestamp {
+	color: white !important;
+	font-size: 11px !important;
+	font-weight: normal !important;
+	float: right !important;
+}
 /*private chat*/
 #buddyList {
 	background: #404040 !important;
@@ -95,6 +102,14 @@
 .floating-menu .option {
 	color: white !important;
 	background: #404040 !important;
+	box-shadow: none !important;
+	border-left: 0 !important;
+	border-right: 0 !important;
+	border-bottom: 0 !important;
+	border-top: solid 3px #666 !important;
+}
+.options {
+	border-top: 0 !important
 }
 .floating-menu .option.active {
 	background: #f3cc13 !important;
